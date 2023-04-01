@@ -1,87 +1,71 @@
-:root {
-  font-size: 16px;
-}
-* {
-  box-sizing: border-box;
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
   margin: 0;
   padding: 0;
-  line-height: 1;
-  border: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
 }
-
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-*{ margin: 0; padding: 0;}
 body{
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-smoothing: antialiased;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-  font-size: 15px;
-  background: #eee;
-}
-
-html,
-body {
-  width: 100vw;
-  min-width: 100vw;
-  height: 100vh;
   min-height: 100vh;
-}
-body {
-  background-color: black;
-  color: red;
-  font-family: 'Catamaran', sans-serif;
-}
-p {
-  font-size: 1.25rem;
-  line-height: 1.25;
-}
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
+  background: black;
+}
+.text-boxes{
   height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+  margin-bottom: 60px;
 }
-.container .wrap {
-  flex: 0 1 37.5rem;
-  margin: 0.625rem;
+.text-boxes .text-box{
+  height: 380px;
+  max-width: 660px;
+  width: 100%;
+  margin: 55px 0;
 }
-.container .wrap .box {
-  padding: 1.25rem;
-  background-color: #fff;
-  border: 0.0625rem solid #607d8b;
-  border-radius: 0.1875rem;
+.text-boxes .text-box .topic{
+  font-size: 18px;
+  font-weight: 600;
+  color: #265df2;
+  margin: 4px;
 }
-.container .wrap .box:not(:last-child) {
-  margin-bottom: 1.5625rem;
+.text-boxes .text-box textarea{
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  font-size: 15px;
+  font-weight: 400;
+  outline: none;
+  border: 1px solid #265df2;
+  border-radius: 8px;
+  background: #e7edfe;
 }
-[data-copy-text] + i.material-icons {
-  transition: all 0.25s ease-in-out;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: #f5f5f4;
-  padding: 0.3125rem 0.625rem;
-  color: #000;
-  border-color: #607d8b;
-  border-style: solid;
-  border-top-right-radius: 0.1875rem;
-  border-bottom-width: 0.0625rem;
-  border-left-width: 0.0625rem;
-  opacity: 0.3;
-  cursor: pointer;
-  z-index: 1;
+.text-box textarea::-webkit-scrollbar{
+  display: none;
 }
-[data-copy-text] + i.material-icons:hover,
-[data-copy-text] + i.material-icons.active {
-  background-color: #607d8b;
-  opacity: 1;
+.text-boxes .text-box button{
+  height: 45px;
+  width: 155px;
   color: #fff;
+  background: #265df2;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 400;
+  margin: 8px 0;
+  cursor: pointer;
+  transition: all 0.4s ease;
 }
+.text-boxes .text-box button:hover{
+  background: #0e4bf1;
+}
+@media (max-width: 400px) {
+  .text-boxes .text-box button{
+    width: 100%;
 
 .credit{
     background: black;
@@ -112,30 +96,4 @@ p {
     font-size: 9pt;
     position: absolute;
     margin: 3px;
-}
-
-.action{
-   text-align: center;
-   display: block;
-   margin-top: 20px;
-}
-
-a.btn {
-  text-decoration: none;
-  color: #666;
-   border: 2px solid #666;
-   padding: 10px 15px;
-   display: inline-block;
-   margin-left: 5px;
-}
-a.btn:hover{
-   background: #666;
-   color: #fff;
-    transition: .3s;
--webkit-transition: .3s;
-}
-.btn:before{
-  font-family: FontAwesome;
-  font-weight: normal;
-  margin-right: 10px;
 }
