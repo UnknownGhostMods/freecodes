@@ -19,12 +19,72 @@
   <br>
   <h1>Hello Welcome To Our Site</h1>
   <br>
-   <br>
   <div class="text-boxes">
     <div class="text-box HTMLBox">
       <div class="topic">UserInfo Code:</div>
       <textarea id="HTMLBox" readonly >
-        Add HTML Code Here
+        $c[---remove this------
+USE BDSCRIPT 2!!!
+add variables
+oldnicknames
+oldusernames
+all lowercase and value must be empty
+----remove this------]
+
+$nomention
+$botTyping
+$var[user;$findUser[$message;yes]]
+$author[Userinfo • $nickname[$var[user]]]
+$authorIcon[$userAvatar[$var[user]]]
+$footer[Requested by $nickname]
+$footerIcon[$authorAvatar]
+$color[$getRoleColor[$highestRole[$findUser[$message;yes]]]]
+$try
+$textSplit[$date-$userJoinedDiscord[$var[user]]-$userJoined[$var[user]]-$creationDate[$guildID];-]
+$httpGet[https://showcase.api.linx.twenty57.net/UnixTime/tounixtimestamp?datetime=$userJoined[$var[user];2006/01/02+15:04:05]]
+$description[
+💮 **$username[$var[user]]#__$discriminator[$var[user]]__** 
+> **$replaceText[$replaceText[$isBot[$var[user]];true;🤖 BOT;1];false;😇 Human;1]**,**  $replaceText[$replaceText[$isUserDMEnabled[$var[user]];false;📪 DM Disabled;1];true;💌 DM Enabled;1]**, **$replaceText[$replaceText[$replaceText[$replaceText[$getUserStatus[$var[user]];online;🟢 Online;1];dnd;🔴 DND;1];idle;🟡 Idle;1];offline;🔘 Offline;1]**
+📅 **[Dates :\](https://www.google.com/search?q=dates)** 
+>  **`Account Age   :` __$sub[$sum[$multi[$splitText[1];365];$multi[$splitText[2];30];$splitText[3]];$sum[$multi[$splitText[4];365];$multi[$splitText[5];30];$splitText[6]]] days__** (<t:$calculate[($var[user] / 4194304 + 1420070400000) / 1000]:D>)
+>  **`Server Age    :` __$sub[$sum[$multi[$splitText[1];365];$multi[$splitText[2];30];$splitText[3]];$sum[$multi[$splitText[10];365];$multi[$splitText[11];30];$splitText[12]]] days__** (<t:$calculate[($guildID / 4194304 + 1420070400000) / 1000]:D>)
+>  **`Server Joined :` __$sub[$sum[$multi[$splitText[1];365];$multi[$splitText[2];30];$splitText[3]];$sum[$multi[$splitText[7];365];$multi[$splitText[8];30];$splitText[9]]] days__** (<t:$httpResult[UnixTimeStamp]:D>)
+💠 Badges:;$replaceText[$replaceText[$replaceText[$hypesquad[$var[user]];brilliance;Hypesquad brilliance;-1];bravery;Hypesquad bravery;-1];balance;Hypesquad balance;-1]
+💥 **[Perms :\](https://www.google.com/search?q=perms)**
+> $replaceText[$replaceText[$checkUserPerms[$var[user];admin];true;⛔** Server Administrator**;1];false;$replaceText[$replaceText[$checkUserPerms[$var[user];ban];true;⛔ Ban;1];false;;1] $replaceText[$replaceText[$checkUserPerms[$var[user];kick];true;🛡️ Kick;1];false;;1] $replaceText[$replaceText[$checkUserPerms[$var[user];manageserver];true;⚙️ Manage server;1];false;;1] $replaceText[$replaceText[$checkUserPerms[$var[user];managechannels];true;🛠️ Manage Channels;1];false;;1] $replaceText[$replaceText[$checkUserPerms[$var[user];manageroles];true;📑 Manage Roles;1];false;;1] $replaceText[$replaceText[$checkUserPerms[$var[user];managemessages];true;📝 Manage Messages;1];false;;1] $replaceText[$replaceText[$checkUserPerms[$var[user];managenicknames];true;🔖 Manage Nicknames;1];false;;1] $replaceText[$replaceText[$checkUserPerms[$var[user];manageemojis];true;😀 Manage Emotes;1];false;;1] $replaceText[$replaceText[$checkUserPerms[$var[user];mentioneveryone];true;🆔 Ping *@*everyone,*@*here & Roles;1];false;;1] $replaceText[$replaceText[$checkUserPerms[$var[user];changenicknames];true;🏷️ Change Nicknames;1];false;;1];1]
+🧑‍💼 **[Roles :\](https://www.google.com/search?q=roles)**
+> **Highest Role :** <@&$highestRole[$var[user]]>
+> $replaceText[$replaceText[$eval[$replaceText[<@&¥findRole[$replaceText[$userRoles[$var[user]];
+;\]> <@&¥findRole[;-1]\];¥;$;-1]\]]; <@&$highestRole[$var[user]]>;;1]; <@&\];;1]
+🔖 **[Usernames :\](https://www.google.com/search?q=usernames&oq=username)**
+> $cropText[$getVar[oldusernames;$var[user]];200;...] 
+🏷️ **[Nicknames :\](https://www.google.com/search?q=nicknames)**
+> $cropText[$getUserVar[oldnicknames;$var[user]];200;...] 
+]
+$catch
+$textSplit[$date-$userJoinedDiscord[$var[user]]-0-0-0-$creationDate[$guildID];-]
+$description[
+💮 **$username[$var[user]]#__$discriminator[$var[user]]__** 
+> **$replaceText[$replaceText[$isBot[$var[user]];true;🤖 BOT;1];false;😇 Human;1]**,**  $replaceText[$replaceText[$isUserDMEnabled[$var[user]];false;📪 DM Disabled;1];true;💌 DM Enabled;1]**, **$replaceText[$replaceText[$replaceText[$replaceText[$getUserStatus[$var[user]];online;🟢 Online;1];dnd;🔴 DND;1];idle;🟡 Idle;1];offline;🔘 Offline;1]**
+📅 **[Dates :\](https://www.google.com/search?q=dates)** 
+>  **`Account Age   :` __$sub[$sum[$multi[$splitText[1];365];$multi[$splitText[2];30];$splitText[3]];$sum[$multi[$splitText[4];365];$multi[$splitText[5];30];$splitText[6]]] days__** (<t:$calculate[($var[user] / 4194304 + 1420070400000) / 1000]:D>)
+>  **`Server Age    :` __$sub[$sum[$multi[$splitText[1];365];$multi[$splitText[2];30];$splitText[3]];$sum[$multi[$splitText[10];365];$multi[$splitText[11];30];$splitText[12]]] days__** (<t:$calculate[($guildID / 4194304 + 1420070400000) / 1000]:D>)
+>  **`Server Joined :` __Unknown days ago__**
+
+💠 Badges: $replaceText[$replaceText[$replaceText[$hypesquad[$var[user]];brilliance;Hypesquad brilliance;-1];bravery;Hypesquad bravery;-1];balance;Hypesquad balance;-1]
+
+💥 **[Perms :\](https://www.google.com/search?q=perms)**
+> $replaceText[$replaceText[$checkUserPerms[$var[user];admin];true;⛔** Server Administrator**;1];false;$replaceText[$replaceText[$checkUserPerms[$var[user];ban];true;⛔ Ban;1];false;;1] $replaceText[$replaceText[$checkUserPerms[$var[user];kick];true;🛡️ Kick;1];false;;1] $replaceText[$replaceText[$checkUserPerms[$var[user];manageserver];true;⚙️ Manage server;1];false;;1] $replaceText[$replaceText[$checkUserPerms[$var[user];managechannels];true;🛠️ Manage Channels;1];false;;1] $replaceText[$replaceText[$checkUserPerms[$var[user];manageroles];true;📑 Manage Roles;1];false;;1] $replaceText[$replaceText[$checkUserPerms[$var[user];managemessages];true;📝 Manage Messages;1];false;;1] $replaceText[$replaceText[$checkUserPerms[$var[user];managenicknames];true;🔖 Manage Nicknames;1];false;;1] $replaceText[$replaceText[$checkUserPerms[$var[user];manageemojis];true;😀 Manage Emotes;1];false;;1] $replaceText[$replaceText[$checkUserPerms[$var[user];mentioneveryone];true;🆔 Ping *@*everyone,*@*here & Roles;1];false;;1] $replaceText[$replaceText[$checkUserPerms[$var[user];changenicknames];true;🏷️ Change Nicknames;1];false;;1];1]
+🧑‍💼 **[Roles :\](https://www.google.com/search?q=roles)**
+> **Highest Role :** <@&$highestRole[$var[user]]>
+> $replaceText[$replaceText[$eval[$replaceText[<@&¥findRole[$replaceText[$userRoles[$var[user]];
+;\]> <@&¥findRole[;-1]\];¥;$;-1]\]]; <@&$highestRole[$var[user]]>;;1]; <@&\];;1]
+🔖 **[Usernames :\](https://www.google.com/search?q=usernames&oq=username)**
+> $cropText[$getVar[oldusernames;$var[user]];200;...] 
+🏷️ **[Nicknames :\](https://www.google.com/search?q=nicknames)**
+> $cropText[$getUserVar[oldnicknames;$var[user]];200;...] 
+]
+$endtry
       </textarea>
       <button id="HTMLButton">Copy Codes</button>
     </div>
@@ -40,7 +100,92 @@
     <div class="text-box JSBox">
       <div class="topic">Nsfw Code:</div>
       <textarea id="JSBox" readonly >
-        Add JavaScript Code here
+        Credits To CODE DEX (UNKNOWN GHOST MODZ)
+Credits To The Images Provider <3
+
+**BDSCRIPT 2 REQUIRED**
+
+Var Requires
+
+NSFW == 
+
+`$nomention
+$color[fff]
+$color[fff;2]
+$color[fff;3]
+
+$onlyNSFW[>>> $username 
+**<#$channelID> Is Not A NSFW Channel** ]
+
+$footer[2022-2023 ©Copyrights To $username[$botID] Developer]
+$footer[login: $username[$authorID];3]
+$footerIcon[$authorAvatar;3]
+
+$footerIcon[https://discords.com/_next/image?url=https%3A%2F%2Fcdn.discordapp.com%2Femojis%2F1042113341696520213.png%3Fv%3D1&w=128&q=75;2]
+
+$if[$isAdmin[$authorID]==true]
+$cooldown[2s;`Please Wait` %time% `To Get Nsfw Content Again`]
+$endif
+
+$if[$isAdmin[$authorID]==false]
+$cooldown[10s;`Please Wait` %time% `To Get Nsfw Content Again`]
+$endif
+
+$if[$message[1;private]==true]
+$setUserVar[NSFW;true]
+$elseif[$message[1;private]==false]
+$setUserVar[NSFW;false]
+$endif
+
+$if[$getUserVar[NSFW]==true]
+$ephemeral
+$endif
+
+$if[$getUserVar[NSFW]==false]
+$deleteIn[9s]
+$endif
+
+$if[$message[1;normal]==ass]
+$var[NormalAss;$randomText[https://images-ext-2.discordapp.net/external/rY_TNFihblVT6zxu50iTuDThHVqZT9BaEpTun3u1arM/https/i.imgur.com/UTUggjt.jpg;https://images-ext-2.discordapp.net/external/Yq7OETYUuuR-zuBvgr_BzwIADOi6K996k5L7F-2S-nk/https/i.imgur.com/Q4PKbAL.jpg;https://images-ext-2.discordapp.net/external/0ZXcjh1SHRZxT6ZDG9KGqPZqBwkuQMfIr6ORPWfcg9E/https/i.redd.it/t5tfxllvfvl11.jpg;https://i.imgur.io/dcVkcy2_d.webp?maxwidth=640&shape=thumb&fidelity=medium;https://images-ext-1.discordapp.net/external/quK-mJDgh8DKgO5LKK0oyawQoZplCzXlhlcVa1LFDsI/http/i.imgur.com/bOEW8PJ.jpg;https://images-ext-2.discordapp.net/external/FpEcGiwwYb16dRqo44MfeKd8l8JKfqMnd7BrIito4l0/http/i.imgur.com/mXtWhQQ.gif;https://images-ext-1.discordapp.net/external/AHC9NyeWamBuc74Q2h3pcHZni-j9lgECmyQXcVPEbIk/https/i.imgur.com/GFR9cKH.jpg;https://images-ext-2.discordapp.net/external/Acp6HRfBSjhr0JNKaaHFxVNR3X9ZeGJ9VcoH6WVWn8o/https/i.redd.it/y7r2c9lfoo661.jpg;https://images-ext-1.discordapp.net/external/cbSnzbpeJghDWK5ar3uO_60cQdVLPtcqtVgEAosM6L0/https/i.imgur.com/mjBDn3c.jpg;https://images-ext-2.discordapp.net/external/7JdKNkDlZYPYnGLTK6qKKlyvtgER-QQ-9sL8pxUBNvU/http/i.imgur.com/tPGMWtj.jpg;https://images-ext-2.discordapp.net/external/JfSdo7PBPUuztkIN5oXzGlqC6DDa2g_Hy-iAEC-dsMU/http/i.imgur.com/jzLyS.png;https://images-ext-1.discordapp.net/external/J4ETJVsM1eetTNgg8sG2EYc8gTLq4ctqOtwTVJMoNvU/https/i.imgur.com/7WO7XHJ.jpg;https://images-ext-2.discordapp.net/external/GWr0VaFHLx4VQ4j9djUnykT3B8CGBsLf3tZeH_0iWPc/http/i.imgur.com/4M4jMBk.jpg;https://images-ext-1.discordapp.net/external/qNhm0a-oYHXTgGg84dgrmwqsv810oIg0LbUnBmon1m4/https/i.imgur.com/L6LkGDM.jpg;https://images-ext-1.discordapp.net/external/Pjmw9G-ObTVWqvA2Ch4Yxa3XzUoU8BMa1Fo5kneJ9wQ/https/i.redd.it/d9kehi3gd3s91.gif]]
+
+$authorIcon[$userAvatar[$botID]]
+$author[$username[$botID]]
+$title[**__NSFW SYSTEM__**] 
+$description[
+**• __Here A Ass__**
+
+$image[$var[NormalAss]]]
+$footer[Type: Nomal Ass;2]
+$endif
+
+$if[$message[1;normal]==boobs]
+
+$var[NormalBoobs;$randomText[https://images-ext-1.discordapp.net/external/0Omqe9PxRRWO2iJlhsyvJ8F9uEB4MxXtGehsi5DByqM/http/i.imgur.com/2nly2yc.jpg;https://images-ext-1.discordapp.net/external/qskWgt8EPCi4GOksryrIMk3LyuKbqGMt72N95VztcRU/http/i.imgur.com/e8q3vCM.jpg;https://images-ext-1.discordapp.net/external/xtfRV74LQMsDwnr2FFeIlF3qSHsQyCDGL3qLQao-TNw/https/i.imgur.com/c5VLgaB.jpg;https://images-ext-1.discordapp.net/external/3YGj8SJ4e6OHxTnGNXcb4g6coWO6wy7BeEJPfBDWXvQ/https/i.redd.it/ty7j6v0ursu01.jpg;https://images-ext-2.discordapp.net/external/dPgF48yW4GnrYLIiw1sF0bvG1WJjOeumN26wFcvKyaE/https/i.imgur.com/LwpfwDX.jpg;https://images-ext-1.discordapp.net/external/fwwmWHe48JnMS9WZY_yi5XSE3dwdcKSvWRj6I3t7Zw0/https/cdni.pornpics.com/460/7/15/80214043/80214043_094_dbb8.jpg;https://images-ext-1.discordapp.net/external/lvigt21Vmd-l3wSItA283IbF8GiAvtnL1UCJR2DBxys/https/i.imgur.com/94YC5iv.png;https://images-ext-1.discordapp.net/external/hhh1MGM60jRC6IX2Ajjv5eFeF8JdZ6Jf9p7RqNOQS7Q/http/i.imgur.com/xoLWUqJ.gif;https://images-ext-2.discordapp.net/external/5XB_zVNsGS7B64_P58Jb4azs1gSkQ6NgVtVdJ5LqFCg/https/i.imgur.com/qAxpMy2.png;https://images-ext-2.discordapp.net/external/fiTAxLhmLUec9c54i8Px9zMGx62w8JPDGvLZKl80g88/https/i.imgur.com/CxESg3m.jpg;https://images-ext-1.discordapp.net/external/HRLH4Gpxw2xQncZ8VD3fhP2sJuis7Cl3wYyCm3lWLM0/http/i.imgur.com/VM4tjRe.jpg;https://images-ext-2.discordapp.net/external/839RvtMnKh-ymo72_mEhN-Cgwbx2cNYof9aN4mtaL8A/http/i.imgur.com/Pd85RFf.gif]]
+
+
+$authorIcon[$userAvatar[$botID]]
+$author[$username[$botID]]
+$title[**__NSFW SYSTEM__**] 
+$description[
+**• __Here A Some Boobs__**
+
+$image[$var[NormalBoobs]]]
+$footer[Type: Nomal Boobs;2]
+$endif
+
+$if[$message[1;normal]==pussy]
+$var[NormalPussy;$randomText[https://images-ext-1.discordapp.net/external/qskWgt8EPCi4GOksryrIMk3LyuKbqGMt72N95VztcRU/http/i.imgur.com/e8q3vCM.jpg;https://images-ext-2.discordapp.net/external/p5ak_03B7D6HVeyi4GuR7JUhFSBfkvYuWFwZ6l2u2Pk/http/i.imgur.com/0lEbwgg.jpg;https://images-ext-1.discordapp.net/external/zpkCm4aUa_ooJ5j7Yg955yWr2gswXxB5ueNeRmkUN2U/https/i.redd.it/xxd5s9ob4s321.jpg;https://images-ext-1.discordapp.net/external/6NuPQXc8uKDcqn1xyh-IExGOTrOeVssxIb3Mw48VygM/https/i.imgur.com/tlbAdLq.jpeg;https://images-ext-1.discordapp.net/external/24D35VRJnqf8Jc9ooAXun7zLLPdhtsy5zLNvLnWGGds/https/i.imgur.com/h3qnRn3.png;https://images-ext-1.discordapp.net/external/mUxKn_dMb0bW2ieP-k4o6FyqCnSdZxfKWouceRdjL44/https/cdni.pornpics.com/460/7/380/86798101/86798101_067_cdf4.jpg;https://images-ext-1.discordapp.net/external/lDDY5-Ns6YxHcT3jTmoOdI5-C-ghzyIVSceEu2ruDkU/http/i.imgur.com/YAOUBii.jpg;https://images-ext-2.discordapp.net/external/pX8jkAheK0aabsHsd8xchWQXdShfeEZjTD8hOPxdXIw/http/i.imgur.com/R8zECR6.jpg;https://images-ext-1.discordapp.net/external/FbhmGjiMy0cb32dzgSlWKq9L3k0Qy_D8E8LlOdtHnvo/http/i.imgur.com/1F5vAzg.jpg;https://images-ext-1.discordapp.net/external/Ru9ELwDgyLoc3K5VoNnVWiqvT_D7zFCJn0BucUXwkQk/http/i.imgur.com/dHqA1xS.jpg;https://images-ext-1.discordapp.net/external/CcKgpLaaVB7pZhUu4qKAXT_ARd9ZgBFHRP4BeR-O01k/http/i.imgur.com/qK3gS.jpg;https://images-ext-1.discordapp.net/external/kIJ0u4va1sRZ1xSBy-q7p0PfM2N8Hdlhrz7PFfB3Yqk/https/i.imgur.com/VhpDQQw.png]]
+
+
+$authorIcon[$userAvatar[$botID]]
+$author[$username[$botID]]
+$title[**__NSFW SYSTEM__**] 
+$description[
+**• __Here A Pussy__**
+
+$image[$var[NormalPussy]]]
+$footer[Type: Nomal Pussy;2]
+$endif`
       </textarea>
       <button id="JSButton">Copy Codes</button>
       </div>
