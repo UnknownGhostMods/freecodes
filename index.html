@@ -92,7 +92,23 @@ $endtry
     <div class="text-box CSSBox">
       <div class="topic">Purge Code:</div>
       <textarea id="CSSBox" readonly >
-        Add CSS codes Here
+        $nomention
+$deletecommand
+$deleteIn[4s]
+$color[023947]
+$color[023947;2]
+$onlyAdmin[**__Only Admins__**]
+$argsCheck[>1;`Prefix clear { Number }`]
+$clear[$message]
+$author[Clear Messages System]
+$title[**$username[$botID]**]
+$description[
+>>> **Cleared** `$message` *Messages*
+
+*From <#$channelID>*]
+$footer[©Copyright To $username[$botID] Dev]
+$footer[User: $username;2]
+$suppressErrors[**Error 404** `Can’t Clear Old Messages`]
       </textarea>
       <button id="CSSButton">Copy Codes</button>
     </div>
@@ -193,7 +209,13 @@ $endif`
     <div class="text-box CSSBox">
       <div class="topic">Emoji Adder Code:</div>
       <textarea id="CSSBox" readonly >
-        Add CSS codes Here
+        $nomention
+$onlyAdmin[You Don't Have enought Permission to use this]
+$argsCheck[1; Please provide an Emoji From ANY Server and I will add it here for you!]
+$suppressErrors
+$addEmoji[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$message[1];:;;2]1;1;;8]2;2;;8]3;3;;8]4;4;;8]5;5;;8]6;6;;8]7;7;;8]8;8;;8]9;9;;8]0;0;;8]<;<;;8]>;>;;8];$textSplit[$message[1];:]
+https://cdn.discordapp.com/emojis/$replaceText[$splitText[3];>;;1].$replaceText[$replaceText[*$splitText[1]*;*<*;png;1];*<a*;gif;1];no]
+👌 Successfully Added Emoji with name `$message[1]`!
       </textarea>
       <button id="CSSButton">Copy Codes</button>
       </div>
