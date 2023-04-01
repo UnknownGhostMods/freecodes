@@ -11,6 +11,20 @@ body{
   width: 100%;
   background: black;
 }
+
+h1 {
+color: #265df2;
+font-size: 10px;
+}
+
+footer {
+color: #265df2;
+  padding: 12px;
+    font-size: 9pt;
+    text-align: center;
+    margin-top: 40px;
+}
+
 .text-boxes{
   height: 100%;
   width: 100%;
