@@ -201,7 +201,38 @@ $endif`
     <div class="text-box CSSBox">
       <div class="topic">Avatar Code:</div>
       <textarea id="CSSBox" readonly >
-        Add CSS codes Here
+        $nomention
+$deletecommand
+$color[$getServerVar[Theme]]
+$color[$getServerVar[Theme2];2]
+$color[$getServerVar[Theme3];3]
+
+
+$authorIcon[$serverIcon]
+$author[Avatar System]
+$title[*__BotName__*]
+$description[
+Avatar Of 
+**$username[$mentioned[1;yes]]**
+
+
+↓↓↓ **__Top Quality Version__** ↓↓↓]
+$image[$userAvatar[$mentioned[1;yes]]?size=4096]
+$footerIcon[$authorAvatar]
+$footer[Download By Clicking A Button]
+
+$footer[ServerName: $serverName[$guildID];2]
+
+$description[[View Original]($userAvatar[$mentioned[1;yes]]);2]
+
+
+$footer[©CopyRighted By BotName Dev®;3]
+
+$addButton[no;$userAvatar[$mentioned[1;yes]]?size==128p;120p;link;no;📥] 
+$addButton[no;$userAvatar[$mentioned[1;yes]]?size=512p;512p;link;no;📥]
+$addButton[no;$userAvatar[$mentioned[1;yes]]?size=720p;SD;link;no;📥] 
+$addButton[no;$userAvatar[$mentioned[1;yes]]?size=4096p;HD;link;no;📥]
+$addButton[no;ExitSystem;Exit System;danger;no;❌]
       </textarea>
       <button id="CSSButton">Copy Codes</button>
    </div>
