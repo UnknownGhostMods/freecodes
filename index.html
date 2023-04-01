@@ -39,10 +39,42 @@
         </div>
         <br>
         <div class="box">
-          <h1>UserInfo [BDFD]</h1>
-          <p data-copy-text="">I don't criticize you! And if you're worried about criticism, sometimes a diet is the
-            best defense. I don't criticize you! And if you're worried about criticism, sometimes a diet is the best
-            defense. Say goodbye to these, because it's the last time!</p>
+          <h1>Stocks [BDFD]</h1>
+          <br>
+          <p data-copy-text="">
+           $color[#00FF00]
+$deletecommand
+$allowMention
+
+$onlyIf[$getUserVar[money]>0;You Do Not Have Money To invested In The Stock Market! With]
+
+
+$onlyIf[$message<=$getUserVar[money];Oh, you don't have this much 💰]
+$onlyIf[$message>0;Dare you try to break me]
+$onlyIf[$isNumber[$message]==true;Only numbers]
+
+$title[You have invested $message in stock market]
+$nomention
+$if[$randomText[up;down]==up]
+$description[The market went in profit and you gained 5x money from your investments
+
+
+__Note__
+```This is just a game, but while investing in stock market in real life you should be careful while investing```]
+$setUserVar[money;$sum[$randomText[+$message+$message+$message+$message+$message;$getUserVar[money]]]]
+$endif
+$if[$randomText[up;down]==down]
+$description[The market went in loss you lost all your investments
+
+__Note__
+```This is just a game, but while investing in stock market in real life you should be careful while investing```]
+$setUserVar[money;$sub[$getUserVar[money];$message]]
+$endif
+$argsCheck[>1;invest some money]
+
+$argsCheck[<2;invest some money]
+$footer[$randomText[🔥;😎] $username $randomText[🔥;😎]]
+           </p>
         </div>
         <br>
         <div class="box">
