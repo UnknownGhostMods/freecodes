@@ -20,71 +20,63 @@
   <h1>Hello Welcome To Our Site</h1>
   <br>
    <br>
-  <br>
-  <header>
-    <div class="action">
-      <a href="index.html" title="Back to Main page" class="btn back">Back to Page</a>
+  <div class="text-boxes">
+    <div class="text-box HTMLBox">
+      <div class="topic">HTML Code:</div>
+      <textarea id="HTMLBox" readonly >
+        Add HTML Code Here
+      </textarea>
+      <button id="HTMLButton">Copy Codes</button>
     </div>
-  </header>
-  <br>
-
-  <main>
-    <!-- Start DEMO HTML (Use the following code into your project)-->
-    <div class="container">
-      <div class="wrap">
-        <div class="box">
-          <p data-copy-text="">Say goodbye to these, because it's the last time! I hear the jury's still out on science.
-            I've opened a door here that I regret. I'm a monster. Really? Did nothing cancel? I'm afraid I just blue
-            myself.</p>
-        </div>
-        <br>
-        <div class="box">
-          <h1>Stocks [BDFD]</h1>
-          <br>
-          <p data-copy-text="">
-           $color[#00FF00]
-           $deletecommand
-           $allowMention
-           $onlyIf[$getUserVar[money]>0;You Do Not Have Money To invested In The Stock Market! With]
-           $onlyIf[$message<=$getUserVar[money];Oh, you don't have this much 💰]
-           $onlyIf[$message>0;Dare you try to break me]
-           $onlyIf[$isNumber[$message]==true;Only numbers]
-           $title[You have invested $message in stock market]
-           $nomention
-           $if[$randomText[up;down]==up]
-           $description[The market went in profit and you gained 5x money from your investments
-           __Note__
-           ```This is just a game, but while investing in stock market in real life you should be careful while investing```]
-$setUserVar[money;$sum[$randomText[+$message+$message+$message+$message+$message;$getUserVar[money]]]]
-$endif
-$if[$randomText[up;down]==down]
-$description[The market went in loss you lost all your investments
-
-__Note__
-```This is just a game, but while investing in stock market in real life you should be careful while investing```]
-$setUserVar[money;$sub[$getUserVar[money];$message]]
-$endif
-$argsCheck[>1;invest some money]
-
-$argsCheck[<2;invest some money]
-$footer[$randomText[🔥;😎] $username $randomText[🔥;😎]]</p>
-        </div>
-        <br>
-        <div class="box">
-          <p data-copy-text="">I don't criticize you! And if you're worried about criticism, sometimes a diet is the
-            best defense. I don't criticize you! And if you're worried about criticism, sometimes a diet is the best
-            defense. Say goodbye to these, because it's the last time!</p>
-        </div>
-      </div>
+    <div class="text-box CSSBox">
+      <div class="topic">CSS Code:</div>
+      <textarea id="CSSBox" readonly >
+        Add CSS codes Here
+      </textarea>
+      <button id="CSSButton">Copy Codes</button>
     </div>
-    
-    <!-- END EDMO HTML (Happy Coding!)-->
-  </main>
-   <br>
+    <div class="text-box JSBox">
+      <div class="topic">JavaScript Code:</div>
+      <textarea id="JSBox" readonly >
+        Add JavaScript Code here
+      </textarea>
+      <button id="JSButton">Copy Codes</button>
+    </div>
+  </div>
   <footer class="credit">Copyrights By CODE DEX</footer>
 
   <!-- Script JS -->
-  <script src="script.js"></script>
+  <script>
+
+// HTML BOx JS Code
+    let HTMLBox = document.getElementById("HTMLBox");
+    let HTMLButton = document.getElementById("HTMLButton");
+
+    HTMLButton.onclick = function() {
+      HTMLBox.select();
+      document.execCommand("copy");
+      HTMLButton.innerText = "Codes Copied"
+    }
+
+    // CSS Box Js Code
+      let CSSBox = document.getElementById("CSSBox");
+      let CSSButton = document.getElementById("CSSButton");
+
+      CSSButton.onclick = function() {
+        CSSBox.select();
+        document.execCommand("copy");
+        CSSButton.innerText = "Codes Copied"
+      }
+    // JavaScript BOx JS Code
+      let JSBox = document.getElementById("JSBox");
+      let JSButton = document.getElementById("JSButton");
+
+      JSButton.onclick = function() {
+        JSBox.select();
+        document.execCommand("copy");
+        JSButton.innerText = "Codes Copied"
+      }
+</script>
 
 </body>
 </html>
