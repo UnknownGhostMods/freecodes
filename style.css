@@ -105,3 +105,21 @@ color: #265df2;
   background: #55ACEE;
   color: white;
 }
+
+/* Youtube */
+.fa-youtube {
+  background: #55ACEE;
+  color: red;
+}
+
+/* Instagram */
+.fa-instagram {
+  background: #55ACEE;
+  color: blue;
+}
+
+/* Discord */
+.fa-discord {
+  background: #55ACEE;
+  color: blue;
+}
