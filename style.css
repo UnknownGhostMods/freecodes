@@ -100,16 +100,15 @@ color: #265df2;
 /* Set a specific color for each brand */
 
 
-/* Twitter */
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
 /* Youtube */
 .fa-youtube {
-  background: #55ACEE;
-  color: red;
+  background: #bb0000;
+  color: white;
+}
+/* Instagram */
+.fa-instagram {
+  background: #125688;
+  color: white;
 }
 
 /* Instagram */
