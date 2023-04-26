@@ -259,7 +259,41 @@ $addButton[no;$userAvatar[$mentioned[1;yes]]?size=4096p;HD;link;no;📥]
 $addButton[no;ExitSystem;Exit System;danger;no;❌]
       </textarea>
       <button id="CSSButton">Copy Codes</button>
-   </div>
+       </div>
+<br>
+    <div class="text-box CSSBox">
+      <div class="topic">(NEW) Gayrate Code:</div>
+      <textarea id="CSSBox" readonly >
+        $nomention
+$color[$random[000000;999999]] 
+$color[$random[000000;999999];2]
+$color[$random[000000;999999];3]
+
+$var[GY;🏳️‍🌈]
+
+$if[$message==]
+$deleteIn[9s]
+$author[$username[$botID]]
+$title[**$var[GY] GAYRATE**]
+$description[
+>>> `You’re GayRate Is` **$random[1;100]%**;2]
+$footer[Power By $username[$botID];2]
+$footer[Request By $username[$authorID];3]
+$elseif[$message[1;user]==$message[1;user]]
+$allowMention
+$deleteIn[9s]
+$author[$username[$botID]]
+$title[**$var[GY] GAYRATE**]
+$description[
+>>> $message[1;user] 
+`GayRate Is` **$random[1;100]%**;2]
+$footer[Power By $username[$botID];2]
+$footer[Request By $username[$authorID];3]
+$suppressErrors
+$endif
+      </textarea>
+      <button id="CSSButton">Copy Codes</button>
+  </div>
   </div>
   <footer>2022-2023 - ©Copyrights Reserved By CODE DEX</footer>
   </div>
