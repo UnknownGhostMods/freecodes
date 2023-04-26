@@ -83,51 +83,17 @@ color: #265df2;
     width: 100%;
 }
 
-/* Style all font awesome icons */
-.fa {
-  padding: 29px 16px; /* Some padding */
+/* Style buttons */
+.btn {
+  background-color: DodgerBlue; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
   font-size: 16px; /* Set a font size */
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
+  cursor: pointer; /* Mouse pointer on hover */
 }
 
-/* Style all font awesome icons */
-.fab {
-  padding: 29px 16px; /* Some padding */
-  font-size: 16px; /* Set a font size */
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
-
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.7;
-}
-
-/* Set a specific color for each brand */
-
-
-/* Youtube */
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-/* Instagram */
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-
-/* Twitter */
-.fa-twitter {
-  background: #55ACEE;
-  color: blue;
-}
-
-/* Discord */
-.fa-discord {
-  background: #55ACEE;
-  color: blue;
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
 }
